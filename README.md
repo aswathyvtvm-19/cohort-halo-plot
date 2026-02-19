@@ -1,51 +1,83 @@
 # Cohort Halo-Plot™
 
-Cohort Halo-Plot™ is a specialized Python visualization tool for longitudinal population health data, mapping age, sex, and mortality distributions across large-scale cohorts.
+Cohort Halo-Plot™ is a Python-based visualization tool for longitudinal population health data, designed to map age, sex, and mortality distributions across large-scale cohorts.
 
-It provides an intuitive circular (halo-style) representation of demographic structure over time, allowing rapid assessment of cohort evolution and mortality dynamics.
+It provides an intuitive halo-style circular representation of demographic structure over time, enabling rapid visual assessment of cohort evolution and mortality dynamics across multiple years.
 
 ---
 
-## Features
+## ✨ Key Features
 
 - Age group distribution visualization
-- Sex-based stratification
-- Mortality mapping
-- Longitudinal cohort comparison
-- Publication-ready visualization output
+- Sex-based stratification (Male/Female comparison)
+- Mortality proportion mapping
+- Longitudinal cohort tracking
+- Publication-ready graphical output
 
 ---
 
-## Use Case
+## 🎯 Intended Use
 
-Designed for large-scale population datasets (e.g., healthcare cohort studies), Cohort Halo-Plot™ enables clear demographic profiling across multiple years in a single integrated view.
+Cohort Halo-Plot™ is designed for large-scale longitudinal datasets such as healthcare or population cohort studies.  
 
----
-
-## File Structure
-
-- `cohort-halomap.ipynb` — Main implementation notebook
+It allows researchers and data scientists to summarize demographic structure across years within a single integrated visualization framework.
 
 ---
 
-## Requirements
+## 📂 Repository Contents
+
+- `cohort-halomap.ipynb` — Main implementation notebook for generating the Halo-Plot visualization
+- `README.md` — Project documentation
+- `LICENSE` — MIT License
+
+---
+
+## 🔧 Requirements
 
 Python 3.x
 
-Libraries:
+Libraries used:
+
 - numpy
 - pandas
 - matplotlib
 - IPython
 
+Install required packages:
+
+
 ---
 
-## Author
+## 📊 Expected Dataset Structure
+
+The notebook assumes the dataset contains the following columns:
+
+- `patient_id` — Unique patient identifier  
+- `sex` — Sex indicator (e.g., Male/Female)  
+- `age` — Age or derived age value  
+- `death_flag` — Indicator for mortality status  
+- `year` — Observation year  
+
+Column names can be adapted as needed for external datasets.
+
+---
+
+## 🔐 Data Availability
+
+This repository contains code only.
+
+The original data used for development were accessed via the SAIL Databank and cannot be shared publicly.  
+
+Users can apply this visualization tool to their own longitudinal cohort datasets structured with the required demographic fields.
+
+---
+
+## 👩‍💻 Author
 
 Aswathy
 
 ---
 
-## License
+## 📄 License
 
 MIT License
